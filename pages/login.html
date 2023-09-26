@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/login.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div id="navBar"></div>
+    <!-- From Login -->
+    <div class="content">
+      <div class="login-container">
+        <div id="loginForm">
+          <div class="form-group">
+            <label for="username">Email:</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              onchange="onChangeE(value)"
+              placeholder="Introduce su correo electronico"
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Contraseña:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              onchange="onChangeP(value)"
+              placeholder="Introduce tu contraseña"
+            />
+          </div>
+          <button id="button" onclick="login()" type="submit">
+            Iniciar sesión
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer" class="footer"></div>
+  </body>
+  <script src="../scripts/loader.js"></script>
+  <script src="../scripts/methods/login.js"></script>
+  <script>
+    importComponent("../components/navbar.html", "navBar");
+    importComponent("../components/footer.html", "footer");
+  </script>
+</html>
