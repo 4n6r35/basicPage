@@ -5,35 +5,50 @@
       "name": "Juan",
       "lastname": "Pérez",
       "age": 30,
-      "email": "juan.perez@example.com"
+      "email": "juan.perez@mail.com",
+      "gender": "M",
+      "phone": "+1234567890",
+      "pais": "México"
     },
     {
       "id": 2,
       "name": "María",
       "lastname": "González",
       "age": 25,
-      "email": "maria.gonzalez@example.com"
+      "email": "maria.gonzalez@mail.com",
+      "gender": "F",
+      "phone": "+0987654321",
+      "pais": "España"
     },
     {
       "id": 3,
       "name": "Carlos",
       "lastname": "López",
       "age": 35,
-      "email": "carlos.lopez@example.com"
+      "email": "carlos.lopez@mail.com",
+      "gender": "M",
+      "phone": "+3456789012",
+      "pais": "Argentina"
     },
     {
       "id": 4,
       "name": "Laura",
       "lastname": "Martínez",
       "age": 28,
-      "email": "laura.martinez@example.com"
+      "email": "laura.martinez@mail.com",
+      "gender": "F",
+      "phone": "+2345678901",
+      "pais": "Colombia"
     },
     {
       "id": 5,
       "name": "Pedro",
       "lastname": "Ramírez",
       "age": 32,
-      "email": "pedro.ramirez@example.com"
+      "email": "pedro.ramirez@mail.com",
+      "gender": "M",
+      "phone": "+4567890123",
+      "pais": "Perú"
     }
   ]
 }

@@ -1,0 +1,76 @@
+<link rel="stylesheet" href="../styles/dialogFrom.css" />
+<div class="dialog" id="dialog">
+  <div class="content">
+    <div class="login-container">
+      <div id="loginForm">
+        <form id="registerForm" class="registerFrom">
+
+
+          <div class="inputFrom">
+            <div class="form-group">
+              <label for="username">Documento:</label>
+              <input type="text" id="id" name="name" placeholder="Identificación" required />
+            </div>
+            <div class="containerB">
+              <div class="form-group">
+                <label for="username">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Nombre" required />
+              </div>
+              <div class="form-group">
+                <label for="username">Apellido:</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Apellido" required />
+              </div>
+            </div>
+
+            <div class="containerB">
+              <div class="form-group">
+                <label for="username">Edad:</label>
+                <input type="text" id="age" name="age" placeholder="Edad" required />
+              </div>
+              <div class="form-group">
+                <label for="username">Genero:</label>
+                <select id="gender" name="gender">
+                  <option value="">Selecionar</option>
+                  <option value="F">F</option>
+                  <option value="M">M</option>
+                </select>
+
+                <!-- <label for="username">Genero:</label>
+                <input type="text" id="gender" name="gender" placeholder="Genero" required /> -->
+              </div>
+            </div>
+
+            <div class="containerB">
+              <div class="form-group">
+                <label for="username">Telefono:</label>
+                <input type="text" id="phone" name="phone" placeholder="Telefono" required />
+              </div>
+              <div class="form-group">
+                <label for="username">Pais:</label>
+                <input type="text" id="pais" name="pais" placeholder="Pais" required />
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <label for="username">Email:</label>
+              <input type="text" id="email" name="email" placeholder="Introduce su correo electronico" required />
+            </div>
+          </div>
+
+          <div class="containerB">
+            <button id="register" type="button" class="btn btn-outline-success mb-2" onclick="save()">Save</button>
+            <button id="reset" type="button" class="btn btn-outline-secondary mb-2"
+              onclick="resetInput()">Reset</button>
+            <button id="cancel" type="button" class="btn btn-outline-danger mb-2"
+              onclick="closeDialog()">Cancel</button>
+          </div>
+
+
+
+          <!-- <button type="submit" onclick="closeDialog()">Agregar</button> -->
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
