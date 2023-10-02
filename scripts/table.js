@@ -5,11 +5,21 @@ let visible = false;
 
 btnListar.addEventListener("click", function () {
   if (!visible) {
+    const existingData = [];
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (!isNaN(key)) {
+        const userData = JSON.parse(localStorage.getItem(key));
+        existingData.push(userData);
+      }
+    }
+
     fetch("../data/data.json")
       .then((response) => response.json())
       .then((data) => {
+        const combinedData = [...data.user, ...existingData];
         tbody.innerHTML = "";
-        data.user.forEach((user) => {
+        combinedData.forEach((user) => {
           const row = document.createElement("tr");
           row.innerHTML = `
             <td>${user.id}</td>
@@ -29,3 +39,5 @@ btnListar.addEventListener("click", function () {
       });
   }
 });
+
+

@@ -1,5 +1,38 @@
-html,
-body {
+* {
   margin: 0;
   padding: 0;
+}
+
+.contPrincipal {
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  font-size: 180%;
+  font-style: italic;
+  margin: 3%;
+}
+
+.contImg {
+  margin-right: 5%;
+  width: 60%;
+  height: 50%;
+}
+.contImg img {
+  margin-left: 10%;
+  width: 60%;
+  height: 60%;
+}
+.contInfo {
+  margin-right: 13%;
+  margin-top: 5%;
+}
+
+.contInfo h3{
+  font-size: 150%;
+}
+
+.contInfo p{
+  margin-top: 5%;
 }

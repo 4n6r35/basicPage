@@ -21,10 +21,10 @@ function showAlert() {
 }
 
 async function login() {
- alertInfo.hidden = true
+  alertInfo.hidden = true;
   if (def === e && def === p) {
     window.location.href = "table.html";
   } else {
-    showAlert()
+    showAlert();
   }
 }
